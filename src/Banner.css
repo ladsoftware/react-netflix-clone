@@ -1,0 +1,68 @@
+header{
+    min-height: 60vh;
+    margin-bottom: 20px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    padding-top:90px;
+}
+header::after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+header button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-right:1rem;
+    background-color: rgba(51,51,51,0.7);
+}
+header button:hover{
+    color:#000;
+    background: #e6e6e6;
+    transition: all 0.2s;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+.banner-content{
+    color: #fff;
+    z-index: 2;
+    margin-left:20% ;
+    max-width: 700px;
+    border:0px solid pink;
+    padding-top: 20px;
+}
+.banner-description{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    max-width: 400px;
+    margin-top:20px;
+    /* background: rgba(0,0,0,0.6); */
+    padding: 20px 0;
+}
+.fade-bottom{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61),#111);
+}

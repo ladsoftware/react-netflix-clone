@@ -5,20 +5,19 @@ import {AppContext} from "./context/AppContext";
 export default function Alert(){
     const {alert,setAlert} = useContext(AppContext);
     function closeAlert(){
-        setAlert(false);
+        setAlert({});
     }
     return (
         <>
-        {Object.keys(alert).length > 0 && (
-            <div className={`alert-container ${Object.keys(alert).length > 0?"active":""}`}>
-                <div className={`alert`}>
-                    <h2>{alert.title}</h2>
-                    <p>{alert.message}</p>
-                    <button className="btn-danger" onClick={closeAlert}>Close</button>
-                </div>
+        
+        <div className={`alert-container ${Object.keys(alert).length > 0?"active":""}`}>
+            <div className={`alert`}>
+                <h2>{alert.title}</h2>
+                <p>{alert.message}</p>
+                <button className="btn-danger" onClick={closeAlert}>Close</button>
             </div>
-            )
-        }
+        </div>
+         
         </>
     );
 }

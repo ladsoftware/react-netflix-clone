@@ -19,6 +19,7 @@ const YouTube = ()=>{
                     <iframe 
                         className="stan-smith"
                         id="trailer" 
+                        title="Trailer"
                         frameBorder="0" 
                         wmode="Opaque" 
                         allowFullScreen="allowFullScreen"

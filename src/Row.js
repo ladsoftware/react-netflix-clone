@@ -4,7 +4,7 @@ import {AppContext} from "./context/AppContext";
 
 
 const poster_url = "https://image.tmdb.org/t/p/w500";
-const backdrop_url = "https://image.tmdb.org/t/p/original";
+//const backdrop_url = "https://image.tmdb.org/t/p/original";
 
 function Row({title, fetchUrl,isLargeRow}){
     const [movies,setMovies]  = useState([]);
@@ -31,7 +31,7 @@ function Row({title, fetchUrl,isLargeRow}){
             let current = ele.scrollLeft;
             let width = ele.clientWidth;
             let scrollWidth = ele.scrollWidth;
-            setScrollRight(!((scrollWidth - current)== width));
+            setScrollRight(!((scrollWidth - current) === width));
             setScrollLeft(current > 100);
         },300);
         

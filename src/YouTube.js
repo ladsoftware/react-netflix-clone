@@ -4,6 +4,7 @@ import {AppContext} from "./context/AppContext";
 const YouTube = ()=>{ 
     const {trailerUrl,setTrailerUrl} = useContext(AppContext);
     function ClosePlayer(){
+        document.body.classList.remove("overflow-hiddden");
         setTrailerUrl(null);
     }
     return (

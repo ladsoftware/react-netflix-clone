@@ -31,6 +31,7 @@ function App() {
     }
     if(trailer_id){ 
         let vid_url = `https://www.youtube.com/embed/${trailer_id}?wmode=transparent&rel=0&modestbranding=0&autohide=1&mute=0&controls=1&autoplay=1&fs=1&rel=0`;
+        document.body.classList.add("overflow-hiddden");
         setTrailerUrl(vid_url);
     }else{
       

@@ -64,7 +64,7 @@ function Row({title, fetchUrl,isLargeRow}){
                             title={movie?.title || movie?.name || movie?.original_name}                            
                             onClick={()=>handleTrailer(movie.id, movie.first_air_date?"tv":"movie")}
                             className={`row-poster ${isLargeRow?"large":''}` }
-                            style={{backgroundImage:`url(${backdrop_url}${isLargeRow?movie.poster_path:movie.backdrop_path})`}} 
+                            style={{backgroundImage:`url(${poster_url}${isLargeRow?movie.poster_path:movie.backdrop_path})`}} 
                             alt={movie?.title || movie?.name || movie?.original_name} ></div>
                         
                     ) )}

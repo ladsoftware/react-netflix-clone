@@ -24,7 +24,7 @@ function App() {
     let trailer, trailer_id;
     for(let i=0; i < len;i++){            
         trailer = request?.data?.videos?.results[len-(i+1)];
-        if(trailer.type.toLowerCase() == "trailer" && trailer.site == "YouTube" && trailer.key && trailer.name.toLowerCase().includes("trailer")){
+        if(trailer.type.toLowerCase() === "trailer" && trailer.site === "YouTube" && trailer.key && trailer.name.toLowerCase().includes("trailer")){
             trailer_id = trailer.key;
             break;
         }
@@ -33,7 +33,7 @@ function App() {
         let vid_url = `https://www.youtube.com/embed/${trailer_id}?wmode=transparent&rel=0&modestbranding=0&autohide=1&mute=0&controls=1&autoplay=1&fs=1&rel=0`;
         setTrailerUrl(vid_url);
     }else{
-      console.log("no trailer");
+      
       setAlert({
         title:"No Trailer",
         message:"Trailer not Available",

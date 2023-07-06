@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Netflix Clone with React
 
 This project is powered by (https://developer.themoviedb.org/docs).
 

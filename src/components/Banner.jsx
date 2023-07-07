@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
-import axios from './axios';
-import requests from './requests';
-import {AppContext} from "./context/AppContext";
-import "./Banner.css";
+import axios from '../axios';
+import requests from '../requests';
+import {AppContext} from "../context/AppContext";
+import "../Banner.css";
 
 
 const backdrop_url = "https://image.tmdb.org/t/p/original";

@@ -1,13 +1,13 @@
 //use react context or define state here on the parent level.
 import React,{useState} from 'react';
 import './App.css';
-import Row from './Row';
+import Row from './components/Row';
 import axios from './axios';
-import Banner from './Banner';
-import Nav from './Nav';
+import Banner from './components/Banner';
+import Nav from './components/Nav';
 import requests  from "./requests";
-import YouTube from './YouTube';
-import Alert from "./Alert";
+import YouTube from './components/YouTube';
+import Alert from "./components/Alert";
 
 import {AppContext} from "./context/AppContext";
 

@@ -1,10 +1,9 @@
 import React, {useState,useEffect, useContext} from 'react';
-import axios from './axios';
-import {AppContext} from "./context/AppContext";
+import axios from '../axios';
+import {AppContext} from "../context/AppContext";
 
 
 const poster_url = "https://image.tmdb.org/t/p/w500";
-//const backdrop_url = "https://image.tmdb.org/t/p/original";
 
 function Row({title, fetchUrl,isLargeRow}){
     const [movies,setMovies]  = useState([]);
